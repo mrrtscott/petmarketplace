@@ -60,6 +60,8 @@ class Animal {
     @Column(updatable = true)
     private var updatedDate: Date? = null
 
+    //Constructor
+
     constructor(
         type: AnimalType?,
         breed: String?,
@@ -82,6 +84,8 @@ class Animal {
         this.status = status
     }
 
+
+    //Getter
 
     fun getId (): UUID{
         return this.id

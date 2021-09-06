@@ -41,6 +41,33 @@ class AnimalLostFound {
     private var updatedDate: Date? = null
 
 
+    //Constructor
+
+    constructor(
+        lastLocationStreet: String?,
+        lastLocationCity: String?,
+        lastLocationParish: String?,
+        lastLocationCountry: String?,
+        dateLastSeen: Date?,
+        details: String?,
+        status: AnimalMissingStatus?,
+        isRewardOffered: Boolean?
+    ) {
+        this.lastLocationStreet = lastLocationStreet
+        this.lastLocationCity = lastLocationCity
+        this.lastLocationParish = lastLocationParish
+        this.lastLocationCountry = lastLocationCountry
+        this.dateLastSeen = dateLastSeen
+        this.details = details
+        this.status = status
+        this.isRewardOffered = isRewardOffered
+    }
+
+
+
+
+    //Getters
+
     fun getId (): UUID{
         return this.id
     }
